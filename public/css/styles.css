@@ -1,0 +1,471 @@
+/* Import Lexend font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;500&family=Quicksand:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+/* Import Lexend, Quicksand, and Source Sans Pro fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;500&family=Quicksand:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1b1b1b;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.liecar-text {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    font-weight: 290;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+nav a {
+    color: #e1dfdb;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14.6667px;
+    line-height: normal;
+    font-weight: 400;
+    text-align: left;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+nav a.active {
+    color: #ffffff;
+}
+
+.search-icon {
+    color: #e0e2e2;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #ffffff;
+}
+
+.hero {
+    background-image: url('images/lab-background.jpg');
+    background-size: cover;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 1357px;
+
+}
+
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.content {
+    padding-top: 70px; /* Espacio para la barra de navegación fija */
+}
+
+h1 {
+    color: #0f6fa5;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-family: 'Lexend', Arial;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55.68px;
+    margin-left: 529px;
+    width: calc(100% - 529px);
+    padding-right: 529px;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+    margin-right: 529px;
+
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: -135px;
+    left: 50%;
+    transform: translateX(-70%);
+    width: 1367px;
+    height: 92px;
+    background-color: #e1dfdb;
+}
+
+i.fas.fa-link {
+    font-size: 0.3em;
+    position: absolute;
+    right: -55px;
+    top: 40%;
+    transform: translateY(60%) rotate(43deg);
+    cursor: pointer;
+    color: #212121;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+h1:hover i.fas.fa-link {
+    opacity: 1;
+}
+
+i.fas.fa-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-43deg);
+    background-color: #3a3737;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.48em;
+    font-family: 'Arial', sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+i.fas.fa-link[data-tooltip]:active::after,
+i.fas.fa-link:hover::after {
+    opacity: 1;
+}
+
+.liecar-info p {
+    font-family: 'Lexend', Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.laboratorio-text {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 170px;
+    margin-left: 109px;
+    margin-right: 109px;
+}
+
+.descripcion-text {
+    font-family: "Lexend",sans-serif;
+    font-size: 19px;
+    line-height: 32px;
+    text-align: justify;
+    color: #212121;
+    margin-left: 109px;
+    margin-right: 115px;
+    letter-spacing: normal;
+    font-weight: 300;
+}
+/* Estilos del contenedor de la imagen y el texto */
+.objetivo-container {
+    display: flex;
+    align-items: flex-start; /* Alinea en la parte superior */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin: 50px; /* Márgenes alrededor del contenedor */
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+}
+
+/* Estilos para la sección de la imagen */
+.image-objetivo {
+    flex: 0 0 auto; /* Evita que la imagen cambie de tamaño automáticamente */
+    margin-left: 50px;
+}
+
+/* Imagen responsiva */
+.image {
+    width: 478px; /* Ajusta el tamaño máximo de la imagen */
+    height: 362px; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para el texto */
+.texto-objetivo {
+    font-family: "Quicksand", sans-serif;
+    font-size: 38.6667px;
+    line-height: 55.68px;
+    flex: 1; /* Permite que el texto ocupe el resto del espacio disponible */
+    margin-right: 50px; /* Ajusta el margen derecho */
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.objetivo-text {
+    font-family: "Lexend", Arial, sans-serif;
+    font-size: 14.6667px;
+    line-height: 20.24px;
+    text-align: left;
+    color: #303030;
+    margin: 0; /* Elimina márgenes extras */
+    letter-spacing: normal;
+}
+
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-family: 'Lexend', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 20.24px;
+    color: #212121;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.text-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    color: #282828;
+}
+
+/* Nuevas secciones */
+.nosotros, .equipo, .proyectos, .contacto {
+    margin-top: 100px;
+    padding: 0 101px;
+}
+
+.nosotros h2, .equipo h2, .proyectos h2, .contacto h2 {
+    font-family: 'Lexend', Arial, sans-serif;
+    font-size: 36px;
+    color: #0f6fa5;
+    margin-bottom: 30px;
+}
+
+/* Grid for Nosotros and Equipo sections */
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.nosotros, .equipo, .proyectos, .contacto {
+    margin-top: 100px;
+    padding: 0 101px;
+}
+
+.nosotros h2, .equipo h2, .proyectos h2, .contacto h2 {
+    font-family: 'Lexend', Arial, sans-serif;
+    font-size: 36px;
+    color: #0f6fa5;
+    margin-bottom: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+#ampliar-mapa {
+    background-color: #0f6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+/* actualizaciones de LIECAR */
+.lineas-actualizaciones {
+    background-color: #e1dfdb;
+    padding: 50px 0 45px;
+    text-align: center;
+    height: 9px;
+}
+.lineas-actualizaciones h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    line-height: 44px;
+    color: #212121;
+    margin-bottom: 30px;
+    margin: -20px 0 10px 109px; /* Ajustado el margen inferior y mantenido el margen izquierdo */
+    text-align: left;
+    margin-left: 109px;
+}
+ 
+/* LIECAR CONVOCATORIA IMAGENES */
+.liecar-convocatorias {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-carousel-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carousel-section {
+    flex: 1;
+    position: relative;
+    max-width: 600px; /* Ajusta este valor según sea necesario */
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.update-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: #333;
+}
+
+.carousel-titles {
+    margin-top: 20px;
+}
+
+.slide-title {
+    font-size: 18px;
+    margin: 10px 0;
+    display: none;
+}
+
+.slide-title.active {
+    display: block;
+}
+
+/* Texto final de la Página de INICIO */
+.text-separar {
+    display: flex; /* Permite que las secciones se alineen horizontalmente */
+    gap: 20px; /* Espacio entre las secciones, ajústalo según sea necesario */
+    justify-content: center; /* Centra las secciones dentro del contenedor, opcional */
+}
+.text-section {
+    flex: 1; /* Hace que cada sección se expanda para ocupar el espacio disponible */
+    position: relative;
+    max-width: 600px; /* Ajusta según el tamaño que desees */
+}
+.text-final{
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+}
+
+.text-content {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.text-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    margin: 5px 0;
+}
