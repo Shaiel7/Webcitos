@@ -250,3 +250,15 @@ nav a.active {
 .unete-equipo button:hover {
     background-color: #333;
 }
+
+/* Pie de página */
+footer {
+    font-family: "Quicksand", sans-serif;
+    font-size: 13.333px;
+    text-align: center;
+    padding: 20px;
+    bottom: 32px; /* 32px desde el final de la ventana */
+    width: 100%;
+    letter-spacing: normal;
+    line-height: 16px;
+}
