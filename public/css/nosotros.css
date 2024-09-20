@@ -1,0 +1,146 @@
+/* Import Lexend font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;500&family=Quicksand:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+/* Import Lexend, Quicksand, and Source Sans Pro fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;500&family=Quicksand:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1b1b1b;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.liecar-text {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    font-weight: 290;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+nav a {
+    color: #e1dfdb;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14.6667px;
+    line-height: normal;
+    font-weight: 400;
+    text-align: left;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+nav a.active {
+    color: #ffffff;
+}
+
+.search-icon {
+    color: #e0e2e2;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #ffffff;
+}
+
+.hero {
+    background-image: url('images/lab-background.jpg');
+    background-size: cover;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 1357px;
+
+}
+
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.content {
+    padding-top: 70px; /* Espacio para la barra de navegación fija */
+}
+
+h1 {
+    color: #0f6fa5;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-family: 'Lexend', Arial;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55.68px;
+    margin-left: 529px;
+    width: calc(100% - 529px);
+    padding-right: 529px;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+    margin-right: 529px;
+
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: -135px;
+    left: 50%;
+    transform: translateX(-70%);
+    width: 1367px;
+    height: 92px;
+    background-color: #e1dfdb;
+}
